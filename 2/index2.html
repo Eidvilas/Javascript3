@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>JS Order</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+            </div>      
+            <div class="col-8">
+                <div class="row">
+                    <div class="col"><h2>Moketojo Adresas</h2></div>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-default" onclick="rodyti_fizini()">Fizinis asmuo</button>
+                    <button type="button" class="btn btn-default" onclick="rodyti_imone()">Imone</button>
+                </div>
+            </div> 
+            <div class="col">
+            </div>  
+        </div>        
+                
+        <!-- --------------------------------------------- --->
+
+                
+   
+        
+        <div class="row answer_list" style="display:none;" id="div_fizinis" >
+            <div class="col">
+            </div>  
+            <div class="col-8">
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            Vardas
+                            <input class="form-control" name="vardas">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            Pavarde
+                            <input class="form-control" name="pavarde">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                            Miestas
+                            <input class="form-control" name="miestas">
+                    </div>
+                    <div class="col">
+                            Rajonas 
+	    			<select class="form-control">
+	    				<option disabled selected value>Pasirinkite Rajona</option>
+	    				<option>Vilniaus</option>
+	    				<option>Kauno</option>
+	    				<option>Klaipedos</option>
+	    			</select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                        <div class="col">
+                            ZIP/Pasto kodas
+                            <input class="form-control" name="pasto_kodas">
+                     </div>
+                    <div class="col">
+                            Salis
+                            <select class="form-control">
+                                    <option disabled selected value>Pasirinkite sali</option>
+                                    <option>Lietuva</option>
+                                    <option>Vokietija</option>
+                                    <option>Prancuzija</option>
+                            </select>
+	    		
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                           Telefonas
+                           <input class="form-control" name="telefonas">
+                    </div>
+                    <div class="col">
+                            Pavarde
+                            <input class="form-control" name="adresas">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+            
+            <!-- ---------------------------------------- --->
+            
+        <div class="row" style="display:none;" id="div_imone">
+            <div class="col">
+            </div>      
+            <div class="col-8" >           
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            Vardas
+                            <input class="form-control" name="vardas">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            Pavarde
+                            <input class="form-control" name="pavarde">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <div>
+                            Imones pavadinimas:
+                            <input class="form-control" name="vardas">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                           Imones kodas
+                           <input class="form-control" name="telefonas">
+                    </div>
+                    <div class="col">
+                            PVM kodas
+                            <input class="form-control" name="adresas">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                            Miestas
+                            <input class="form-control" name="miestas">
+                    </div>
+                    <div class="col">
+                            Rajonas 
+	    			<select class="form-control">
+	    				<option disabled selected value>Pasirinkite Rajona</option>
+	    				<option>Vilniaus</option>
+	    				<option>Kauno</option>
+	    				<option>Klaipedos</option>
+	    			</select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                        <div class="col">
+                            ZIP/Pasto kodas
+                            <input class="form-control" name="pasto_kodas">
+                     </div>
+                    <div class="col">
+                            Salis
+                            <select class="form-control">
+                                    <option disabled selected value>Pasirinkite sali</option>
+                                    <option>Lietuva</option>
+                                    <option>Vokietija</option>
+                                    <option>Prancuzija</option>
+                            </select>
+	    		
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col">
+                           Telefonas
+                           <input class="form-control" name="telefonas">
+                    </div>
+                    <div class="col">
+                            Pavarde
+                            <input class="form-control" name="adresas">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+
+    </div>
+ 
+	<script src="script.js"></script>
+</body>
+</html>
