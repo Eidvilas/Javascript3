@@ -27,10 +27,6 @@
             </div>  
         </div>        
                 
-        <!-- --------------------------------------------- --->
-
-                
-   
         
         <div class="row answer_list" id="div_fizinis" >
             <div class="col">
@@ -50,6 +46,17 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col">
+                            El. pastas
+                            <input class="form-control" name="el_pastas">
+                    </div>
+                    <div class="col">
+                             Adresas
+                            <input class="form-control" name="adresas">
+                    </div>
+                </div>
                 
                 <div class="row">
                     <div class="col">
@@ -59,7 +66,7 @@
                     <div class="col">
                             Rajonas 
 	    			<select class="form-control">
-	    				<option disabled selected value>Pasirinkite Rajona</option>
+	    				<option disabled selected value>Pasirinkite miesta</option>
 	    				<option>Vilniaus</option>
 	    				<option>Kauno</option>
 	    				<option>Klaipedos</option>
@@ -90,8 +97,7 @@
                            <input class="form-control" name="telefonas">
                     </div>
                     <div class="col">
-                            Pavarde
-                            <input class="form-control" name="adresas">
+                           
                     </div>
                 </div>
             </div>
@@ -99,7 +105,7 @@
             </div>
         </div>
             
-            <!-- ---------------------------------------- --->
+          
             
         <div class="row" style="display:none;" id="div_imone">
             <div class="col">
@@ -109,13 +115,13 @@
                     <div class="col">
                         <div>
                             Vardas
-                            <input class="form-control" name="vardas">
+                            <input class="form-control" name="imones_vardas">
                         </div>
                     </div>
                     <div class="col">
                         <div>
                             Pavarde
-                            <input class="form-control" name="pavarde">
+                            <input class="form-control" name="imones_pavarde">
                         </div>
                     </div>
                 </div>
@@ -124,12 +130,13 @@
                     <div class="col">
                         <div>
                             Imones pavadinimas:
-                            <input class="form-control" name="vardas">
+                            <input class="form-control" name="imones_pavadinimas">
                         </div>
                     </div>
                     <div class="col">
                         <div>
-                            
+                            PVM kodas
+                            <input class="form-control" name="pvm_kodas">
                         </div>
                     </div>
                 </div>
@@ -137,23 +144,34 @@
                 <div class="row">
                     <div class="col">
                            Imones kodas
-                           <input class="form-control" name="telefonas">
+                           <input class="form-control" name="imones_kodas" id="imones_kodas">
                     </div>
                     <div class="col">
-                            PVM kodas
-                            <input class="form-control" name="adresas">
+                            Pakartokite imones koda
+                            <input class="form-control" name="pakartotinis_kodas" id="pakartotinis_kodas">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                            El. pastas
+                            <input class="form-control" name="imones_el.pastas" id="email">
+                    </div>
+                    <div class="col">
+                             Adresas
+                            <input class="form-control" name="imones_adresas">
                     </div>
                 </div>
                 
                 <div class="row">
                     <div class="col">
                             Miestas
-                            <input class="form-control" name="miestas">
+                            <input class="form-control" name="imones_miestas">
                     </div>
                     <div class="col">
                             Rajonas 
 	    			<select class="form-control">
-	    				<option disabled selected value>Pasirinkite Rajona</option>
+	    				<option disabled selected value>Pasirinkite miesta</option>
 	    				<option>Vilniaus</option>
 	    				<option>Kauno</option>
 	    				<option>Klaipedos</option>
@@ -164,7 +182,7 @@
                 <div class="row">
                         <div class="col">
                             ZIP/Pasto kodas
-                            <input class="form-control" name="pasto_kodas">
+                            <input class="form-control" name="imones_pasto_kodas">
                      </div>
                     <div class="col">
                             Salis
@@ -181,17 +199,39 @@
                 <div class="row">
                     <div class="col">
                            Telefonas
-                           <input class="form-control" name="telefonas">
+                           <input class="form-control" name="imones_telefonas">
                     </div>
                     <div class="col">
-                            Pavarde
-                            <input class="form-control" name="adresas">
+                            
                     </div>
                 </div>
             </div>
             <div class="col">
             </div>
         </div>
+
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-8">
+                <p id="mistakes"></p>
+                
+            </div>
+            <div class="col">
+                
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-8">
+                <button type="button" class="btn btn-default" onclick="validate_activity();" id="btn_3">Submit</button>
+            </div>
+            <div class="col">
+                
+            </div>
+        </div>   
 
     </div>
  
